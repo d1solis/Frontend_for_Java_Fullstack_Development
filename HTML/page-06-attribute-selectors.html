@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixth Document</title>
+    <!-- Attribute selectors are used to select elements based on the presence or value of
+     the attributes, and are denoted by square brackets. They can be combined with other 
+     selectors to create more specific styling rules and are useful for targeting specific
+     elements on a page-->
+    <style>
+        a[href^="http"] {
+            background-color: red;
+        }
+
+        input[type="email"]{
+            background-color: green;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Internal 1</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <a href="#">Internal 2</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="#">Internal 3</a>
+<br><br>
+<br>
+
+    <input type="text">
+    <input type="email">
+    <input type="phone">
+    <input type="password">
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh Document</title>
+    <style>
+        p {
+            font-size: smaller;
+            font-style: italic;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-family: Impact;
+        }
+
+        #first {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        #second {
+            background-color: pink;
+            height: 50px;
+            opacity: 0.5;
+            position: relative;
+            top: 10px;
+        }
+
+        #third {
+            background-color: orange;
+            height: 50px;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        #fourth {
+            background-color: red;
+            height: 50px;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        img {
+            float: right;
+        }
+
+        .cleared {
+            clear: right;
+        }
+
+        div {
+            background-color: greenyellow;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        span {
+            background-color: cyan;
+            height: 100px;
+            margin: 10px;
+            display: block;
+        }
+    </style>
+    <!-- font-size can range from auto names such as smaller to even specific units such as 50px-->
+    <!-- font-style just changes the style of the font and how it appears-->
+    <!-- font-weight controls how heavy the font looks, can use numbers or keywords such as bold/bolder-->
+    <!-- text-transform changes the way the text is capitalized -->
+    <!-- font-family changes the actual font of the text-->
+
+    <!-- STATIC positioned element. It is the default position for all the HTML elements and is in the left 
+     uppermost corner of the webpage-->
+    <!-- RELATIVE positioned element. Can shift text to the top, bottom, left, right-->
+        <!-- top: makes the text moves 10px from the top and bottom: makes the text move 10px from the bottom-->
+    <!-- ABSOLUTE positioned element. An element with position: absolute; is positioned relative to the 
+     nearest positioned ancestor -->
+    <!-- FIXED position element. We can say that fixed position is similar to absolute positioning, except,
+     the element is positioned relative to the viewport or the visible area of the browser window. This means
+     that the element will remain the same position even as the user scrolls the page.-->
+</head>
+<body>
+    <p>This is some random text</p>
+
+    <br>
+    
+    <div id="first">
+        First div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="third">
+        Third div
+    </div>
+    <div id="fourth">
+        Fourth
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="./panther-chameleons-for-sale.jpg"/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+        tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+    <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+        tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+        tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+    <!-- FLOAT property. It's used for positioning and formatting content, such as letting an image float left
+     to the text in a container. The FLOAT property can have one of the following values:
+        left - The element that floats to the left of its container
+        right - The element that floats to the right of its container
+        none - The element does not float (will be displayed just where it occurs in the text). This is the default
+        inherit - The element inherits the float value of its parent-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div>First</div>
+    <div>Second</div>
+    <div>Third</div>
+    <span>One</span>
+    <span>Two</span>
+    <span>Three</span>
+
+    <!-- DISPLAY poperty. Specifies the display behavior (the type of rendering box) of an element.
+        Block - Creates a new line and take up the full width of the container 
+        Inline - Flow with texts and take up only as much width as necessary
+        Inline Block - Hybrid of the two above. Allow for text flow, which also taking additional space if needed-->
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Document</title>
+    <!-- The style allows us to design our desired tag-->
+    <!-- Simple selectors of tag, class, ID and universal are a powerful way to target specific HTML elements
+     apply styles to them using CSS-->
+    <style>
+        h1 {
+            background-color: blue;
+        }
+        
+        .redBackground{
+            background-color: red;
+        }
+
+        #changeColor{
+            color: white;
+        }
+
+        * {
+            color: brown;
+        }
+
+        div > h3{
+            color: green;
+        }
+
+        h1 ~ h2{
+            color: pink;
+        }
+    </style>
+    <!-- To apply a CSS style to a class we need to denote '.' and then the class name and then write CSS-->
+    <!-- To apply a CSS style to a unique ID we need to denote '#' and then the ID name and then write CSS-->
+    <!-- To apply a CSS style to a universal selector, we need to denote '*' and then write CSS-->
+        <!--The universal selector * matches all elements on the page-->
+    <!-- We put the name of the parent then its descendant and then we can write our style so, div h3-->
+    <!-- We can put div > h3 which '>' denotes the child selector so only the first two h3 tags get colored
+     this does not include the h3 tag thats inside the selection tag-->
+    <!-- h1 + h2 where '+' is the adjacent sibling selector, and only selects the first adjacent tag to the H1 tag-->
+    <!-- h1 ~ h2 where '~' is the general sibling selector, and selects all the siblings in the current tag-->
+</head>
+<body>
+    <h1>This is the first H1 tag</h1>
+    <h2 class="redBackground">This is the second H2 tag</h2>
+    <!-- We can apply a class to h2 tag and apply a CSS style to a class-->
+    <h2>This is the second H2 tag</h2>
+    <h2>This is the second H2 tag</h2>
+    <h2>This is the second H2 tag</h2>
+
+    <h1>This is the first H1 tag</h1>
+    <h2 class="redBackground">This is the second H2 tag</h2>
+    <!-- A class is always used for a group, that's why we can have multiple tag elements with the same 
+     class name and we can apply CSS on them -->
+     <h2>This is the second H2 tag</h2>
+     <h2>This is the second H2 tag</h2>
+     <h2>This is the second H2 tag</h2>
+
+    <h1 id="changeColor">This is third H1</h1>
+    <!-- We can apply a unique ID name to h1 tag and apply a CSS style to a unique ID-->
+    <!-- Since the ID is unique, it is not affected by the universal selector and overrides it-->
+
+    <div>
+        <h3>I am inside div</h3>
+        <h3>I am inside div</h3>
+        <section>
+            <h3>I am inside div still</h3>
+        </section>
+    </div>
+    <!-- This is the descendant selector, all H3 tags which are inside div, will be changed so long as they 
+     are inside div-->
+</body>
+</html>

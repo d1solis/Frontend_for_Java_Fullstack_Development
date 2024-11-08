@@ -1,0 +1,151 @@
+<!DOCTYPE html> <!-- This tag tells the browswer that the current document is an html document so that the browswer can render it appropriately -->
+<html lang="en"> <!-- This tag identifies the beginning of an html document -->
+<head> <!-- This tag gives us the information about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Document</title> <!-- This tag identifies the title of the document, it's what appears at the top of your web browswer tab -->
+</head>
+<body> <!-- This tag defines the visible content of the document -->
+    This is my first html page!
+    These are the Basic HTML Formatting Tags:
+
+    <h1>Heading 1 (The biggest heading size)</h1>
+    <h6>Heading 2 (The smallest heading size)</h6>
+    <p>This is our first paragraph</p>
+    <p>My second paragraph of document</p>
+    <p>This is our bold tag: <b>Bold</b></p>
+    <p>This is our italics tag: <i>Italics</i></p>
+    <p>This is our underline tag: <u>Underline</u></p>
+    <p>This is our strikethrough tag: <s>Strikethrough</s></p>
+    <p>This is our inserted tag: <ins>Inserted</ins><p>
+    <p>This is our superscript tag: 2<sup>3</sup></p>
+    <p>This is our subscript tag: H<sub>2</sub>O</p>
+    <p>This is our small tag: <small>Small</small></p>
+    <p>This is our mark tag: <mark>Mark</mark></p>
+    <!-- Emphasis is similar to Italics and Strong is similar to Bold -->
+    <!-- Strong defines the importance of text written inside it -->
+    <!-- Emphasis will be read using verbal stress in Node.js, Python, Java, etc-->
+    <p>This is our emphasis tag: <em>Emphasized</em></p>
+    <p>This is our strong tag: <strong>Strong</strong></p>
+
+
+    <form action="" method="">
+        <input type="text"/>
+        <br/> <!-- Break tag acts like a newline -->
+        <input type="number"/>
+        <br/>
+        <input type="password"/>
+        <br/>
+        <input type="date"/>
+        <br/>
+        <input type="time"/>
+        <br/>
+        <input type="submit"/>
+        <br/>
+        <input type="radio"/>
+        <br/>
+        <input type="checkbox"/>
+        <br/>
+        <input name="name" type="text" placeholder="Put your name"/>
+        <br/>
+        <input type="number" max="10" min="5"/>
+        <br/>
+        <input type="text" value="Put your name" readonly/>
+        <br/>
+        <input type="text" value="Put your name" hidden/>
+        <br/>
+        <label>You are a minor</label>
+        <input type="radio"/>
+        <br/>
+        <label>Do you accept terms and conditions?</label>
+        <input type="checkbox"/>
+        <br/>
+        <select>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Yellow</option>
+        </select>
+        <br/>
+    </form>
+
+
+    <iframe src="https://www.bing.com/images?FORM=Z9LH" width="70%" height="500"></iframe>
+    <!-- Embed a website within a website, but some websites have disabled access to their website using iframe-->
+    <iframe width="947" height="480" src="https://www.youtube.com/embed/neKSP2P7FIY" title="Cozy Porch Space in the Autumn Forest 🍁 Jazz, Pumpkin Glow and Crackling Fireplace for Sleep &amp; Heal🎃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Youtube already comes with pre-made iframes-->
+
+
+    <img src="https://img1.picmix.com/output/stamp/normal/6/6/9/4/1694966_719f0.png" alt="User Profile"/>
+    <!-- alt="" is a way to tell the user what the image is if image address is broken -->
+    <img src="./panther-chameleons-for-sale.jpg" width="40%" height="300" alt="Chameleon"/>
+
+
+    <audio controls>
+        <source src="https://www.cs.cmu.edu/~dwinkler/sounds/frog.wav"/>
+    </audio>
+    <!-- You can also use: muted, loop, and/or autoplay attributes-->
+    <audio controls>
+        <source src="./Video/Audio/snoozy beats - newtown.mp3"/>
+    </audio>
+
+
+    <video controls>
+        <source src="https://ia601204.us.archive.org/33/items/youtube-AkRMyA3gI-A/Noggin_Moose_A_Moose_Are_We_There_Yet-AkRMyA3gI-A.mp4">
+    </video>
+    <!-- Next to controls, you can use width, height, loop, muted, and autoplay attributes-->
+     <video controls>
+        <source src="./Video/Nickelodeon Bumper Fish.mp4"/>
+     </video>
+
+
+     <h1>Ordered List: </h1>
+     <ol>
+        <li>Pineapple</li>
+        <li>Mango</li>
+        <li>Coconuts</li>
+     </ol>
+
+     <h1>Unordered List: </h1>
+     <ul>
+        <li>Chameleons</li>
+        <li>French Bulldog</li>
+        <li>Huskies</li>
+     </ul>
+
+
+     <table border="1" width="300" cellspacing="0">
+        <thead> <!-- Header of table-->
+            <tr> <!-- Table row-->
+                <th>Country: </th> <!-- Table heading-->
+                <th>Literacy Rate:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">India</td> <!-- Table column-->
+                <td align="center">80%</td>
+            </tr>
+            <tr>
+                <td align="center">China</td>
+                <td align="center">75%</td>
+            </tr>
+            <tr>
+                <td align="center">Egypt</td>
+                <td align="center">60%</td>
+            </tr>
+        </tbody> <!-- Body of table-->
+        <tfoot>
+            <tr>
+                <td align="center">World</td>
+                <td align="center">76%</td>
+            </tr>
+        </tfoot> <!-- Footer of table-->
+     </table>
+
+
+     <div> <!-- This is a container tag, it doesn't add any meaning to our HTML page-->
+        <p>The division tag is nonsematic!</p>
+     </div>
+</body>
+</html> <!-- This tag identifies the end of an html document -->

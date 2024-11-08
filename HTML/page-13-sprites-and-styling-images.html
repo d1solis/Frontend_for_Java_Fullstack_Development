@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirteenth Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #bear {
+            width: 350px;
+            height: 350px;
+            background: url(Image_sprite.PNG) 0px 0px;
+        }
+
+        #switzerland {
+            width: 360px;
+            height: 350px;
+            background: url(Image_sprite.PNG) -370px 0px;
+        }
+
+        #forest {
+            width: 350px;
+            height: 350px;
+            background: url(Image_sprite.PNG) -740px 0px;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 10px solid black;
+            border-radius: 50%;
+        }
+    </style>
+        <!-- background: Defines the background image and its position (left 0px, top 0px) -->
+</head>
+<body>
+    <img id="bear" src="https://forums.autodesk.com/autodesk/attachments/autodesk/124/166489/1/pendant_v1_2018-Aug-16_01-28-21PM-000_CustomizedView22680472167_png_alpha.png" />
+    <img id="switzerland" src="https://forums.autodesk.com/autodesk/attachments/autodesk/124/166489/1/pendant_v1_2018-Aug-16_01-28-21PM-000_CustomizedView22680472167_png_alpha.png"/>
+    <img id="forest" src="https://forums.autodesk.com/autodesk/attachments/autodesk/124/166489/1/pendant_v1_2018-Aug-16_01-28-21PM-000_CustomizedView22680472167_png_alpha.png"/>
+    <!-- Since the img tag requires src, the src (source attribute) cannot be empty, so we include
+     a small transparent image-->
+</body>
+</html>

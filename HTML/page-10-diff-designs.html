@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://w3.p2hp.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tenth</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table{
+            margin: 10px;
+            width: 500px;
+        }
+
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            padding: 2px;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+
+        td:hover {
+            background-color: aliceblue;
+            color: blue;
+        }
+
+        i {
+            font-size: 50px !important;
+            color: blue;
+        }
+
+        .grid-container {
+            background-color: rgb(94, 134, 245);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 10px;
+            grid-template-areas: 
+            "header header header"
+            "sidebar content content"
+            "sidebar content content"
+        }
+
+        .grid-item {
+            background-color: azure;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item-1 {
+            grid-area: header;
+        }
+
+        .item-2 {
+            grid-area: sidebar;
+        }
+
+        .item-3 {
+            grid-area: content;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">1</div>
+        <div class="grid-item item-2">2</div>
+        <div class="grid-item item-3">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+
+    <i class="fa fa-home"></i>
+    <!-- Icon tag. "fa fa-home" is provided to us by the library from our links-->
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Rashad</td>
+            <td>Hassan</td>
+        </tr>
+        <tr>
+            <td>Dalila</td>
+            <td>Solis</td>
+        </tr>
+        <tr>
+            <td>Hazell</td>
+            <td>Solis</td>
+        </tr>
+        <tr>
+            <td>Bianca</td>
+            <td>Dong</td>
+        </tr>
+        <tr>
+            <td>Katie</td>
+            <td>Lee</td>
+        </tr>
+        <tr>
+            <td>Mya</td>
+            <td>Marroquin</td>
+        </tr>
+        <tr>
+            <td>Xavier</td>
+            <td>Marroquin</td>
+        </tr>
+        <tr>
+            <td>Milo</td>
+            <td>Solis</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Document</title>
+    <!-- Psuedo-Class Selectors include :nth-child, :first-child -->
+    <!-- Nth-child styles a specific element(s)-->
+            <!-- You can write anything in the parameter nth-child() parenthesis such as 1, 2n, 3n+0, odd, even...-->
+    <!-- First-child styles the first element-->
+    <!-- Last-child styles the last element-->
+    <style>
+        /* p:nth-child(5){
+            background-color: cyan;
+        } */
+
+        p:first-child{
+            background-color: pink;
+        }
+
+        p:last-child{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- Paragraph tags-->
+    <!-- If we have other things above in our body tag, our parameters may be shifted slightly for
+     the nth-child because it's counting these elements as well, not just the paragraph tags. This same logic
+     also applies to the first-child I believe-->
+     <p>ONE</p>
+     <p>TWO</p>
+     <p>THREE</p>
+     <p>FOUR</p>
+     <div>
+        <p>FIVE</p>
+        <p>SIX</p>
+        <p>SEVEN</p>
+        <p>EIGHT</p>
+        <p>NINE</p>
+     </div>
+    <!-- Since the scope changed and we have a div tag, ONE and FIVE because first childs and are pink-->
+    <!-- Out of ALL the p tags, NINE is the last one which is why it's only purple-->
+</body>
+</html>

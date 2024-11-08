@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Document</title>
+    <!-- The style allows us to design our desired tag-->
+    <!-- The ::before pseudo-element inserts some content before the content of the specified element-->
+    <!-- The ::after pseudo-element inserts some content after the content of the specified element-->
+
+    <style>
+        #chat::before{
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            border: none;
+            border-radius: 50px;
+        }
+
+        #chat::after{
+            content: 'New Message';
+            background-color: grey;
+            color: black;
+            opacity: 0.5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 9px;
+            padding: 2px;
+        }
+
+        #newcss::first-line{
+            background-color: yellow;
+        }
+    </style>
+    <!--There's first-line which only applies to the entire first line of the element and first-letter which only
+    applies to only the first letter of the element -->
+</head>
+<body>
+    <p id="chat">Loren Ipsum</p>
+    <p id="newcss">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
