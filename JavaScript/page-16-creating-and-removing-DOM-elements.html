@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>My Favorite Foods</h1>
+
+    <ul id="foodList">
+        <li>Pizza</li>
+        <li>Sushi</li>
+    </ul>
+
+    <button id="addButton">Add Tacos</button>
+    <button id="removeButton">Remove Pizza</button>
+
+    <script>
+        // Select the "Add Tacos" button using its ID
+        const addButton = document.querySelector("#addButton");
+        // Select the "Remove Pizza" button using its ID
+        const removeButton = document.querySelector("#removeButton");
+        // Select the unordered list (ul) element using its ID
+        const foodList = document.querySelector("#foodList");
+
+        // Add an event listener to the "Add Tacos" button to respond when clicked
+        addButton.addEventListener("click", () => {
+            // Create a new <li> element
+            const newListItem = document.createElement("li");
+            // Create a text node containing the word "Tacos"
+            const newListItemText = document.createTextNode("Tacos");
+
+            // Add the text node to the newly created <li> element
+            newListItem.append(newListItemText);
+            // Append the new <li> element to the <ul> (foodList)
+            foodList.appendChild(newListItem);
+        });
+
+        // Add an event listener to the "Remove Pizza" button to respond when clicked
+        removeButton.addEventListener("click", () => {
+            // Select the first <li> element within the <ul> (assumed to be "Pizza")
+            const pizza = document.querySelector("li:nth-child(1)");
+            
+            // Remove the selected <li> element from the <ul>
+            foodList.removeChild(pizza);
+        });
+    </script>
+    <!-- Summary:
+        The "Add Tacos" button appends a new <li> element that contains the text "Tacos" to the end of the list.
+        The "Remove Pizza" button removes the first <li> item in the list. Since "Pizza" is the first item initially,
+            it will be removed when you click the button.
+        The main idea here is that JavaScript is used to manipulate the Document Object Model (DOM), which means 
+            dynamically adding or removing elements from the webpage without reloading it. -->
+</body>
+</html>

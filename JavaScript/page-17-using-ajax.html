@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Users:</h1>
+    <ul id="userList"></ul> <!-- Unordered list where user names will be added -->
+
+    <script>
+        // Select the unordered list element where we want to display user data
+        const userList = document.querySelector("#userList");
+
+        // Create a new XMLHttpRequest object to interact with servers
+        const xhr = new XMLHttpRequest();
+
+        // Set up an event listener to monitor the state of the request
+        xhr.onreadystatechange = function() {
+            // Check if the request is complete
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                // If the request is successful (status code 200), proceed to handle the data
+                if (xhr.status === 200) {
+                    // Parse the JSON response text to convert it into a JavaScript array
+                    const userData = JSON.parse(xhr.responseText);
+
+                    // Loop through each user object in the array
+                    userData.forEach((user) => {
+                        // Create a new <li> element for each user
+                        const newUser = document.createElement("li");
+                        // Create a text node containing the user's name
+                        const newUserText = document.createTextNode(user.name);
+
+                        // Append the text node to the newly created <li> element
+                        newUser.appendChild(newUserText);
+                        // Append the <li> element to the user list <ul> in the DOM
+                        userList.appendChild(newUser);
+                    });
+                } else {
+                    // If the request fails, log an error message to the console
+                    console.log("There was a problem with the request.");
+                }
+            }
+        };
+
+        // Set up the request by specifying the method (GET) and the URL to send the request to
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+        // Send the request to the server
+        xhr.send();
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- The Document Object Model (DOM) is a tree-like structure that represents HTML
+     elements of a web page. You can use JavaScript to access these elements in various ways.-->
+
+    <h1>DOM Selectors</h1>
+
+    <div id="hello">Hello World!</div>
+    <div>Hi there</div>
+
+    <ul>
+        <li class="green">item 1</li>
+        <li>item 1</li>
+        <li class="green">item 1</li>
+        <li>item 1</li>
+    </ul>
+
+    <!-- In order to see the accessing of DOM elements using JavaScript, you must inspect the 
+     webpage and then go to console tab and there you should see the desired output. -->
+    <script>
+        console.log(document.getElementById('hello'));
+
+        let items1 = document.getElementsByClassName('green');
+        console.log(items1);
+
+        let items2 = document.getElementsByTagName('li');
+        console.log(items2);
+
+        let item1 = document.querySelector('.green');
+        console.log(item1);
+
+        let item2 = document.querySelectorAll('.green');
+        console.log(item2);
+    </script>
+        <!-- 
+        document.getElementById(id) ---- Find an element by element id
+        document.getElementsByClassName(name)	---- Find elements by class name
+        document.getElementsByTagName(name)	----- Find elements by tag name
+        document.querySelector(selector) ---- Returns the first element that matches a CSS selector
+        document.querySelectorAll(selector) ---- To return all matches (not only the first)
+        -->
+</body>
+</html>
