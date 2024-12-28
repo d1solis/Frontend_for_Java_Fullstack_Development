@@ -1,16 +1,33 @@
 # Frontend_for_Java_Fullstack_Development
 
-## About this Course
-This comprehensive course is designed to equip students with the necessary skills to create interactive, dynamic, and fully functional front-end applications as part of a full-stack Java development process. The course consists of three modules that guide students through the fundamentals of HTML, CSS, JavaScript, and Angular.
+## My Notebook
+This repository serves as a notebook for learning Frontend, which I completed as part of an online course on Frontend Development from Board Infinity through Coursera. The course provided hands-on exercises to build a strong foundation in HTML, CSS, JavaScript, and Angular.
 
-The first module, "Introduction to HTML & CSS", serves as the bedrock of the course where students are introduced to the basics of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). The principles of structuring an HTML document and manipulating its layout, typography, and colors using CSS are deeply explored.
+## Overview 
+This repository includes various examples that cover fundamental concepts, such as:
+- HTML (Hypertext Markup Language)
+- CSS (Cascading Style Sheets)
+  - Structuring an HTML document and manipulating its layout, typography, and colors using CSS
+- JavaScript
+  - Variables, data types, operators, control structures, and functions
+- Angular (JavaScript Framework)
+  - Components, modules, directives, services, and templates
+ 
+ ## Usage
+To run any of the programs:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/d1solis/Fundamentals_Of_Java_Programming.git
+2. Open the project Visual Studio Code.
+3. Navigate to the desired folder with examples (HTML or JavaScript) and click the bottom right to run live server.
 
-The second module, "Introduction to JavaScript Programming", offers a comprehensive overview of JavaScript programming. This module provides students with hands-on experience and a deep understanding of JavaScript's core features and capabilities. Key concepts such as variables, data types, operators, control structures, and functions are covered extensively to ensure students can create effective and maintainable JavaScript programs.
+## Course Information
+These examples are part of the exercises from the Frontend for Java Full Stack Development course by Board Infinity. The course covered the basics of Frontend Developement and helped me build a solid understanding of HTML, CSS, JavaScript, and Angular.
+Link to my certification: https://coursera.org/share/d9770baa4c5df83cd6e240c2124b560f
 
-The third and final module, "Angular for Frontend Development", provides an in-depth introduction to Angular, one of the most popular JavaScript frameworks for building dynamic and scalable web applications. This module not only covers the key concepts of Angular, including components, modules, directives, services, and templates, but also provides practical application, allowing students to create complex web applications that are modular, maintainable, and testable.
+## Contact
+Feel free to reach out if you have any questions or suggestions!
 
-Upon completion of this course, students will have the skills to build robust, scalable, and visually engaging web applications as part of a full-stack Java development process.
-
-Taught by: **Board Infinity**, Instructor
-
-
+- Author: Dalila Solis
+- LinkedIn: www.linkedin.com/in/dalila-solis-993b85319
+- Email: dalilaeileensolis@gmail.com
